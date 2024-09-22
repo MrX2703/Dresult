@@ -3,7 +3,7 @@ let filteredData = [];
 
 // Load the Excel file directly (this assumes file is already available server-side)
 window.onload = function() {
-    fetch('/path/to/your/excel/file.xlsx')
+    fetch('11242_IV_GS_S24 (1).xlsx')
         .then(response => response.arrayBuffer())
         .then(data => {
             const workbook = XLSX.read(new Uint8Array(data), { type: 'array' });
